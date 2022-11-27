@@ -21,8 +21,9 @@ for i in range (size):
 
 print(my_list)
 
-d = int(input('Введите цифру: '))
-if d in my_list:
-    my_list.remove(d)
+d = input('Введите цифру: ')
+my_list = str(my_list)
+res_list = my_list.replace(d, '')
 
-print(my_list)
+print(res_list)
+

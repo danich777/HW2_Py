@@ -11,15 +11,13 @@
 
 my_text = 'Python - один из самых популярных языков программирования в мире'
 print(my_text)
-
 my_text = my_text.split()
 
 sub_str = input('Введите подстроку: ')
-
 new_text = []
 
 for word in my_text:
-    if sub_str not in my_text:
+    if sub_str not in word:
         new_text.append(word)
 
 print(' '.join(new_text))
